@@ -1,0 +1,90 @@
+.cartDetails {
+       font-family: "PingFang SC";
+    // 车详情说明
+    .cartDetails-cartInfo {
+        width: 100%;
+        // height: 400px;
+        border:1px solid #000;
+        display: flex;
+        justify-content: space-around;
+        .cartDetails-banner{
+            width: 50%;
+            height: 100%;
+            // background-color: orange;
+            .image-banner{
+                width: 90%;
+                margin: 15px auto;
+                height: 100%;
+                overflow: hidden;
+                .cartDetails-swiper-container{
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        height: 370px;
+                    }
+                }
+            }
+        }
+        .cartDetails-parameterInfo {
+            width: 50%;            
+        }
+    }
+    .aboutBuyCart{
+        margin-top: 40px;
+    }
+}
+// 购车优势
+
+// 购车流程
+.detais-buyFlow {
+    font-family: "PingFang SC";
+    position: relative;
+    .flow{
+        margin-top: 20px;
+    }
+    .flow ul li{
+        width: 295px;
+        height: 257px;
+        margin-right: 20px;
+        float: left;
+        // margin: 15px 20px;
+        text-align: center;
+        position: relative;
+        img{
+            width: 85px;
+            height: 81px;
+        }
+        p {
+            font-size:18px;
+            color:rgba(102,102,102,1);
+        }
+        p:nth-of-type(1) {
+            font-size:22px;
+            color:rgba(51,51,51,1);
+            font-weight: bold;
+            padding:20px 0px;
+        }
+    }
+    .flow ul li:nth-of-type(4) {
+        margin-right: 0px;
+
+    }
+    .flow ul li div::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 200px;
+        border:1px solid green;
+        right: -47px;
+        top: 17%;
+        width: 80px;
+    }
+    .flow ul li:nth-of-type(4) div::after{
+        content: "";
+
+        position: absolute;
+
+        border:0px solid green;
+
+    }
+}

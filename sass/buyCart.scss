@@ -1,0 +1,254 @@
+.buy-cartContainer{
+    background-color: #F3F5F7;
+    position: relative;
+}
+// 区域选择
+.areaSelect {
+    position: absolute;
+    display: inline-block;
+    margin-left: 10px;
+    button {
+        border: none;
+    }
+    .areaCity {
+        position: relative;
+    }
+    .areaCityList {
+        position: absolute;
+        width: auto;
+        max-width: 500px;
+        height: auto;
+        // display: none;
+        li {
+            float: left;
+            padding-left: 10px;
+            height: 50px;
+            font-size: 16px;
+            margin: 0;
+        }
+        
+    }
+}
+// 面包屑
+.crumbs{
+    height: 40px;
+    line-height: 40px;
+    background-color: wheat;
+    margin-top: 44px;
+    a {
+        margin-left: 20px;
+    }
+    a:hover {
+        color: #fff;
+        background: #22ac38;
+        text-decoration: none;
+    }
+    span {
+        width: 50px;
+        height: 100%;
+        box-sizing: border-box;
+        display: none;
+    }
+    button {
+        width: 50px;
+        height: 100%;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    input{
+        width: 300px;
+        height: 40px;
+        font-size: 18px;
+        padding-left: 10px;
+        border:1px solid #ddd;
+    }
+}
+.screen{
+    border: 1px solid #e6e6e6;
+    dl {
+        display: block;
+        // -webkit-margin-before: 1em;
+        // -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 0px; 
+        min-height: 50px;
+        position: relative;
+    }
+    dt {
+        float: left;
+        width: 70px;
+        height: 100%;
+        position: absolute;
+        line-height: 50px;
+        font-size: 14px;
+        color: #7a838d;
+        text-align: center;
+        background: #fafafa;
+    }
+    dd {
+        float: right;
+        width: 1128px;
+        .dd-top {
+            height: 20px;
+            padding: 15px 0 15px 6px;
+        }
+        .dd-top .a-box {
+            float: left;
+            width: 940px;
+            height: 20px;
+            overflow: hidden;
+            span {
+                border:1px solid #bbb;
+                margin-left:4px; 
+                padding: 1px;
+                i{
+                    font-size: 12px;
+                    color: gray;
+                    padding-left: 4px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .dd-top a.active {
+            color: #fff;
+            background: #22ac38;
+            text-decoration: none;
+        }
+        .dd-top a {
+            float: left;
+            height: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 6px;
+            color: #495056;
+            margin: 0 8px;
+        }
+        .dd-btn {
+            float: right;
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            padding: 0 7px;
+            color: #495056;
+            cursor: pointer;
+            i {
+                display: inline-block;
+                width: 11px;
+                height: 6px;
+                margin-left: 2px;
+                color: rgb(46, 40, 40);
+            }
+        }
+        .dd-btn:hover{
+            color: #22ac38;
+            i {
+                color: #22ac38;
+            }
+        }
+    }
+    // 显示所有的车型 样式 开始
+    .dd-all {
+        width: 1128px;
+        border-top: 1px solid #e6e6e6;
+        margin-top: 20px;
+    }
+    .dd-all ul {
+        width: 350px;
+        padding: 0px 0 0 50px;
+        float: left;
+    }
+    .dd-all li {
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+    .dd-all label {
+        float: left;
+        width: 20px;
+        height: 24px;
+        line-height: 24px;
+        color: #22ac38;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .dd-all p {
+        float: left;
+        width: 330px;
+    }
+    .dd-all a {
+        float: left;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 15px;
+        font-size: 14px;
+        color: #495056;
+    }
+    // 显示所有的车型 样式 结束
+}   
+// 筛选 排序
+.list-filter{
+    height: 57px;
+    line-height: 57px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    .list-sort {
+        height: 28px;
+        margin-top: 12px;
+    }
+    
+}
+.list-filter a {
+    margin-left: 20px;
+}
+.list-filter a:hover {
+    color: #22ac38;
+    text-decoration: none;    
+}
+// 车车列表展示
+ul.carlist {
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+.carlist {
+    
+}
+.carlist li {
+    float: left;
+    margin-bottom: 10px;
+    padding: 9px 8px;
+    .infoDescribe{
+        width: 287px;
+        box-sizing: border-box;
+    }
+}
+.carlist li a {
+    display: block;
+    width: 280px;
+    // height: 287px;
+    // padding: 9px 8px;
+    border: 1px solid transparent;
+    position: relative;
+}
+.carlist img {
+    width: 280px;
+    height: 190px;
+    border: 1px solid #e9e9e9;
+}
+.carlist li a.car-a .t {
+    font-size: 17px;
+    color: #495056;
+    font-weight: 400;
+    padding: 1px 0 6px 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// 页面导航nav s
+.pageNav{
+    text-align: center;
+}

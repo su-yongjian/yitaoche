@@ -1,0 +1,150 @@
+.attractInvestmentInfo{
+    background-color: white;
+}
+.attractInvestmentInfo>div {
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    img {
+        width: 50%;
+        margin: 10px 20px;
+    }
+    span {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-direction:column;
+        margin: 10px 20px;
+        p:nth-of-type(1) {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        p:nth-of-type(2) {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+    }
+}
+.joinUs , .linkUs {
+    > p {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+        background-color: white;
+        height: 30px;
+        line-height: 30px;
+    }
+    > p::before {
+        content: "";
+        width: 400px;
+        border:1px solid #000;
+        font-family: 'Arial Normal', 'Arial';
+        border-radius: 1px;
+        position: absolute;
+        left: 110px;
+        top: 15px;
+    }
+    > p::after {
+        content: "";
+        width: 400px;
+        border:1px solid #000;
+        font-family: 'Arial Normal', 'Arial';
+        border-radius: 1px;
+        position: absolute;
+        right: 110px;
+        top: 15px;
+    }
+}
+// 加入我们 成为商家
+.joinUs .joinUsInfo{
+    margin-top:20px;
+    background-color: white;
+}
+.joinUsFlow{
+    display: flex;
+    justify-content: space-around;
+    .qualificationExamination{
+        position: relative;
+    }
+    div:nth-of-type(2)::before{
+        content: "";
+        width: 200px;
+        border:1px dotted #000;
+        font-family: 'Arial Normal', 'Arial';
+        border-radius: 2px;
+        position: absolute;
+        left: 132px;
+        top: 35px;
+    }
+    div:nth-of-type(2)::after{
+        content: "";
+        width: 200px;
+        border:1px dotted #000;
+        font-family: 'Arial Normal', 'Arial';
+        border-radius: 2px;
+        position: absolute;
+        right: 200px;
+        top: 35px;
+    }
+    img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .freeOnApplication , .qualificationExamination , .modilFamily {
+        display: flex;
+        flex-direction:column;
+        justify-content:space-around;
+        >p:nth-of-type(1) {
+            margin-top:20px;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+        >p:nth-of-type(2) {
+            margin:20px 0px;
+            align-items:left ;
+        
+        }
+    }
+}
+// 入驻商家信息提交
+.merchantInfoSubmit{
+    width: 600px;
+    // height: 400px;
+    margin:20px auto;
+    background-color: #F2F2F2;
+    .SubmitForm{
+        width: 380px;
+        // height: 300px;
+        margin: 0 auto;
+    }
+
+    .formSubmit > div{
+        // display: flex;
+        // justify-content: space-around;
+        // text-align: center;
+        padding-top:30px;
+        label {
+            width: 80px;
+        }
+        input{
+            width: 280px;
+            display: inline-block;
+        }
+    }
+    button{
+        margin: 0 auto;
+        width: 85%;
+        height: 40px;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+// 联系我们
